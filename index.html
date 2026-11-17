@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,34 +16,142 @@
       --warn: #c62828;
       --warn-soft: #fdecea;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background: var(--bg);
       color: var(--ink);
       font: 15px/1.6 "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", system-ui, sans-serif;
     }
-    header, main, footer { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
-    header { padding-top: 32px; }
-    h1 { margin: 0; font-size: 32px; }
-    .sub { margin: 4px 0 0; color: var(--ink-2); }
-    .palette { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 16px 0 0; padding: 0; list-style: none; font-size: 13px; color: var(--ink-2); }
-    .palette li { display: flex; align-items: center; gap: 6px; }
-    .palette i { width: 16px; height: 16px; border-radius: 3px; border: 1px solid var(--line); display: inline-block; }
-    .palette b { font-family: Consolas, monospace; color: var(--ink); }
-    .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin: 24px 0 40px; }
-    .tile { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
-    .tile.broken { border-color: var(--warn); background: var(--warn-soft); }
-    .pixels { display: grid; grid-template-columns: repeat(8, 1fr); gap: 2px; aspect-ratio: 1; }
-    .pixels span { background: var(--empty); border-radius: 2px; }
-    .pixels span.bad { background: repeating-linear-gradient(45deg, var(--warn) 0 3px, #fff 3px 6px); }
-    .name { margin: 8px 0 0; font-weight: 700; }
-    .seat { font-weight: 400; color: var(--ink-2); font-size: 13px; }
-    .msg { margin: 4px 0 0; font-size: 12.5px; color: var(--warn); }
-    .placeholder { aspect-ratio: 1; display: grid; place-items: center; text-align: center; color: var(--warn); font-size: 13px; border: 2px dashed var(--warn); border-radius: 6px; padding: 8px; }
-    footer { color: var(--ink-2); font-size: 13px; padding-bottom: 32px; }
+
+    header,
+    main,
+    footer {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      padding-top: 32px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .sub {
+      margin: 4px 0 0;
+      color: var(--ink-2);
+    }
+
+    .palette {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+      font-size: 13px;
+      color: var(--ink-2);
+    }
+
+    .palette li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .palette i {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      border: 1px solid var(--line);
+      display: inline-block;
+    }
+
+    .palette b {
+      font-family: Consolas, monospace;
+      color: var(--ink);
+    }
+
+    .wall {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 24px 0 40px;
+    }
+
+    .tile {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .tile.broken {
+      border-color: var(--warn);
+      background: var(--warn-soft);
+    }
+
+    .pixels {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 2px;
+      aspect-ratio: 1;
+    }
+
+    .pixels span {
+      background: var(--empty);
+      border-radius: 2px;
+    }
+
+    .pixels span.bad {
+      background: repeating-linear-gradient(45deg, var(--warn) 0 3px, #fff 3px 6px);
+    }
+
+    .name {
+      margin: 8px 0 0;
+      font-weight: 700;
+    }
+
+    .seat {
+      font-weight: 400;
+      color: var(--ink-2);
+      font-size: 13px;
+    }
+
+    .msg {
+      margin: 4px 0 0;
+      font-size: 12.5px;
+      color: var(--warn);
+    }
+
+    .placeholder {
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--warn);
+      font-size: 13px;
+      border: 2px dashed var(--warn);
+      border-radius: 6px;
+      padding: 8px;
+    }
+
+    footer {
+      color: var(--ink-2);
+      font-size: 13px;
+      padding-bottom: 32px;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <!-- ▼ 標題 -->
@@ -81,7 +190,7 @@
   <script src="parts/seat8.js"></script>
   <script src="parts/seat9.js"></script>
   <script src="parts/seat10.js"></script>
-
+  <script src="parts/seat11.js"></script>
   <!-- 把登記好的圖畫出來（這段不用改） -->
   <script>
     (function () {
@@ -165,4 +274,5 @@
     })();
   </script>
 </body>
+
 </html>
