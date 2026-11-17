@@ -3,7 +3,7 @@
 部門 Git 工作坊的練習 repo。每個人在自己的座位用字母畫一張 8×8 的小圖，透過 Pull Request（PR）合併進 main。全部合併完，就是一面大家一起完成的像素牆。
 
 - **在本機看**：雙擊 `index.html`，用瀏覽器打開。
-- **在網路上看**：`https://<owner>.github.io/git-pixel-wall/`（講師開啟 GitHub Pages 後才有，merge 後大約 1 分鐘更新）
+- **在網路上看**：`https://<owner>.github.io/git-pixel-wall/`（開啟 GitHub Pages 後才有，merge 後大約 1 分鐘更新）
 
 > 下面的指令以 Windows PowerShell 為準，Git Bash 也能用。`<...>` 的部分請換成你自己的內容。
 
@@ -79,7 +79,7 @@ git config --show-origin user.email
 1. **不要在 main 上 commit。** 每個任務都先開自己的分支。
 2. **只改 Issue 指定的檔案和位置。** 不要用格式化工具重排整份檔案。
 3. **PR 描述寫 `Closes #<編號>`**，merge 後 Issue 會自動關閉。
-4. **開完 PR，先去 review 別人的。** Review 輪替表看投影幕。
+4. **開完 PR，先去 review 別人的。**
 5. 看到 `LF will be replaced by CRLF` 是正常的警告，不用理會。
 
 ---
@@ -124,7 +124,7 @@ git push -u origin issue-<編號>-<名字>
 
 1. 打開 repo 頁面，點黃色提示列上的 **Compare & pull request**。
 2. 描述照範本填，記得寫 `Closes #<編號>`。
-3. 右側 **Reviewers** 選輪替表上的同事 → **Create pull request**。
+3. 右側 **Reviewers** 選一位同事 → **Create pull request**。
 
 ### ⑤ Review 別人的 PR
 
